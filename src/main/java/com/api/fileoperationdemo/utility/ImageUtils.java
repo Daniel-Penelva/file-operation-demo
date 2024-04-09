@@ -52,3 +52,35 @@ public class ImageUtils {
     }
 
 }
+
+
+/* Bom saber: Classes Deflater e Inflater 
+
+As classes Inflater e Deflater fazem parte do pacote "java.util.zip" do Java e são usadas para compressão e descompressão de dados, respectivamente.
+
+A classe "Deflater" é usada para comprimir dados usando o algoritmo Deflate, que é um algoritmo de compressão de dados sem perdas. Ele é 
+frequentemente usado para reduzir o tamanho dos dados antes de serem transmitidos por uma rede ou armazenados em um arquivo. A classe "Deflater" 
+fornece métodos para definir o nível de compressão, finalizar o processo de compressão e desinflar os dados em um buffer.
+
+A classe "Inflater" é usada para descomprimir dados que foram comprimidos usando o algoritmo Deflate. Ele é frequentemente usado para 
+descomprimir dados que foram recebidos por uma rede ou carregados de um arquivo. A classe Inflater fornece métodos para definir os dados de 
+entrada, finalizar o processo de descompressão e inflar os dados em um buffer.
+
+As classes Deflater e Inflater são geralmente usadas em conjunto para compressão e descompressão de dados em uma aplicação Java. Por exemplo, um 
+objeto Deflater pode ser usado para comprimir dados antes de serem enviados por uma rede, e então um objeto Inflater pode ser usado para 
+descomprimir os dados no lado receptor.
+
+A classe Inflater tem um método chamado inflate() que é usado para descomprimir os dados de entrada e preencher o buffer especificado com os 
+dados descomprimidos. O método retorna o número de bytes dos dados descomprimidos. O método tem duas versões overloadadas, uma que recebe um 
+array de bytes e outra que recebe um array de bytes, um deslocamento e um comprimento.
+
+A classe Deflater tem um método chamado deflate() que é usado para comprimir os dados de entrada e preencher o buffer especificado com os dados 
+compressos. O método retorna o número de bytes dos dados compressos. O método também tem duas versões overloadadas, uma que recebe um array de 
+bytes e outra que recebe um array de bytes, um deslocamento e um comprimento.
+
+As classes Inflater e Deflater podem ser configuradas com várias opções, como o nível de compressão, se usar a compressão GZIP e se envolver os 
+dados compressos em um cabeçalho GZIP.
+
+Em resumo, as classes Inflater e Deflater são ferramentas poderosas para compressão e descompressão de dados no Java. Elas fornecem uma maneira 
+simples e eficiente de comprimir e descomprimir dados usando o algoritmo Deflate.
+*/
